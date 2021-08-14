@@ -8,6 +8,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { NavigationBar } from '@/sections/navigation-bar';
+import { Home } from '@/sections/home';
 
 import { navLinks } from '@/utils/data';
 
