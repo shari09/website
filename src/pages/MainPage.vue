@@ -1,5 +1,5 @@
 <template>
-  <NavigationBar :current="home"/>
+  <NavigationBar :current="'home'"/>
   <Home />
   <div class="h-screen">
 

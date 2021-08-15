@@ -22,7 +22,6 @@ export const home: Home = {
     'Systems Design Engineering',
     'Food Lover',
     'Designer',
-
   ],
   logoPath: './assets/logo.png',
 };
