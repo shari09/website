@@ -2,11 +2,14 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
   mode: 'jit',
-  purge: [
-    './public/**/*.html',
-    './src/**/*.vue',
-    './src/**/**/*.vue',
-  ],
+  purge: {
+    content: [
+      './public/**/*.html',
+      './src/**/*.vue',
+      './src/**/**/*.vue',
+    ],
+  },
+  // defaultExtractor: content => content.match(/[\w-:/]+(?<!:)/g) || [],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
