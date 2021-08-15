@@ -1,5 +1,5 @@
 <template>
-  <ul class="fixed top-0 flex flex-col md:flex-row w-full bg-white h-[72px] items-center pl-3">
+  <ul class="fixed top-0 flex flex-col md:flex-row w-full bg-white h-[72px] items-center pl-3 z-50">
     <NavIcon 
       v-for="navLink in Object.values(navLinks)" 
       :text="navLink.display" 

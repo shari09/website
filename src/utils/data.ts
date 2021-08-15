@@ -43,5 +43,5 @@ There are lots of things I like aside from programming.
 In fact, I don't touch the computer at all outside my dedicated "learning hours".
 I like digital drawing (though I haven't drawn in a while), painting, gaming (if it's non-competitive),
 going out with friends (poor wallet though), photography, and photo/video editing (that's the one skill I wish I have).
-If you ever see me in real life, make sure to give me a plush, I'll really appreciate it :)`,
+If you ever see me in real life, just know that buying me food will always make me happy :)`,
 };
