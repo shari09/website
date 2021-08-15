@@ -1,12 +1,12 @@
 <template>
-  <div class="w-full pl-20">
-    <p class="text-2xl">{{ header.plain }}</p>
-    <p class="text-3xl font-bold"
+  <div class="w-full pl-28">
+    <p class="text-3xl">{{ header.plain }}</p>
+    <p class="text-4xl font-bold"
       :class="`text-${color}`"
     >
       {{ header.emphasis }}
     </p>
-    <div class="h-1 bg-purple-dark rounded-3xl" :class="`w-[${header.emphasis.length+3}em]`"/>
+    <div class="h-1 bg-purple-dark rounded-3xl" :style="{ width: `${header.emphasis.length+3}em` }"/>
   </div>
 </template>
 
@@ -14,6 +14,7 @@
 import { defineComponent, PropType } from 'vue';
 import { Header } from '@/utils/interfaces';
 
+// TODO: get rid of the inline-style
 export default defineComponent({
   name: 'Header',
   props: {

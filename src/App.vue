@@ -1,5 +1,5 @@
 <template>
-  <div class="font-sans bg-blue">
+  <div class="font-sans bg-purple-lightest">
     <MainPage />
   </div>
 </template>
@@ -15,5 +15,3 @@ export default defineComponent({
   },
 });
 </script>
-
-

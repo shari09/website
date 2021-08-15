@@ -35,9 +35,13 @@ export const about: About = {
   quote: 'Engineering is the process of breaking down complex problems and solve them in the cleanest way possible',
   tagline: 'Design, Create, Test',
   description: `
-Lorem ipsum dolor sit amet, vel eu accusam eligendi.
-Illud appareat quo no, id assum nulla vix, eam ut labore 
-consequat dissentiet. Veniam volumus antiopam ei mea. Nam no 
-moderatius sadipscing, an probo volumus senserit mea. Ut quo option
-concludaturque, malis vivendo eam cu, et ius altera dolores.`,
+I mainly do things related to web dev (no matter if it's frontend or backend), since web apps
+are so prevalent right now. Aside from that, I also do UI/UX design (I designed this site)
+but I haven't read upon any actual design guides. Everything was made with intuition.
+If I ever have time, I'll try to get into cybersecurity because hacking sounds cool.
+There are lots of things I like aside from programming.
+In fact, I don't touch the computer at all outside my dedicated "learning hours".
+I like digital drawing (though I haven't drawn in a while), painting, gaming (if it's non-competitive),
+going out with friends (poor wallet though), photography, and photo/video editing (that's the one skill I wish I have).
+If you ever see me in real life, make sure to give me a plush, I'll really appreciate it :)`,
 };
