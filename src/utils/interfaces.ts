@@ -1,12 +1,18 @@
 export interface NavLink {
-  link: string;
+  anchor: string;
   display: string;
 }
 
-type SocialMediaTypes = 'github' | 'linkedIn' | 'email' | 'devpost';
+export interface NavLinks { [key: string]: NavLink };
 
 export interface SocialMedia {
-  type: SocialMediaTypes;
   logoPath: string;
   link: string;
+}
+
+export interface Home {
+  tag: string;
+  name: string;
+  options: string[];
+  logoPath: string;
 }

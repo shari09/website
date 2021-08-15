@@ -1,5 +1,5 @@
 <template>
-  <a class="mx-3 flex h-full flex-col" 
+  <a class="px-3 flex h-full flex-col" 
     @mouseenter="setActive(true)"
     @mouseleave="setActive(false)"
   >
@@ -8,7 +8,7 @@
       :class="[active ? 'text-purple' : 'text-purple-light']"
     >{{ text }}</span>
     <div class="mb-auto">
-      <div class="h-1 bg-purple-dark rounded-3xl mb-auto" v-if="active"/>
+      <div class="h-1 bg-purple-dark rounded-3xl mb-auto" v-if="active || (!isHovering && current)"/>
     </div>
   </a>
 </template>
@@ -24,6 +24,10 @@ export default defineComponent({
       required: true,
     },
     isHovering: {
+      type: Boolean,
+      default: false,
+    },
+    current: {
       type: Boolean,
       default: false,
     },

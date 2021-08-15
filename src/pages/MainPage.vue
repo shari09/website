@@ -1,5 +1,6 @@
 <template>
-  <NavigationBar :navLinks="navLinks" />
+  <NavigationBar :current="home"/>
+  <Home />
   <div class="h-screen">
 
   </div>
@@ -10,15 +11,8 @@ import { defineComponent } from 'vue';
 import { NavigationBar } from '@/sections/navigation-bar';
 import { Home } from '@/sections/home';
 
-import { navLinks } from '@/utils/data';
-
 export default defineComponent({
   name: 'MainPage',
-  components: { NavigationBar },
-  setup() {
-    return {
-      navLinks,
-    }
-  },
+  components: { NavigationBar, Home },
 });
 </script>
