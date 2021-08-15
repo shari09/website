@@ -4,11 +4,14 @@
     @mouseleave="setActive(false)"
   >
     <span 
-      class="mt-auto text-lg" 
-      :class="[active ? 'text-purple' : 'text-purple-light']"
+      class="mt-auto text-lg fade" 
+      :class="[isActive() ? 'text-purple' : 'text-purple-light']"
     >{{ text }}</span>
     <div class="mb-auto">
-      <div class="h-1 bg-purple-dark rounded-3xl mb-auto" v-if="active || (!isHovering && current)"/>
+      <div 
+        class="h-1 bg-purple-dark rounded-3xl mb-auto fade"
+        :class="[ !isActive() && 'bg-opacity-0']"
+      />
     </div>
   </a>
 </template>
@@ -32,15 +35,21 @@ export default defineComponent({
       default: false,
     },
   }, 
-  setup() {
+  setup(props) {
     const active = ref(false);
     const setActive = (state: boolean) => { active.value = state };
 
-
+    const isActive = (): boolean => active.value || (!props.isHovering && props.current)
     return {
-      active,
+      isActive,
       setActive,
     }
   },
 });
 </script>
+
+<style scoped>
+  .fade {
+    @apply transition duration-300 ease-in-out;
+  }
+</style>
