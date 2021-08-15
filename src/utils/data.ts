@@ -1,4 +1,4 @@
-import { Home, NavLinks, SocialMedia } from "./interfaces";
+import { Home, NavLinks, SocialMedia, About } from "./interfaces";
 
 export const navLinks: NavLinks = {
   home: { anchor: 'home', display: 'HOME' },
@@ -25,4 +25,19 @@ export const home: Home = {
     'Designer',
   ],
   logoPath: './assets/logo.png',
+};
+
+export const about: About = {
+  header: {
+    plain: 'What kind of person',
+    emphasis: 'Am I',
+  },
+  quote: 'Engineering is the process of breaking down complex problems and solve them in the cleanest way possible',
+  tagline: 'Design, Create, Test',
+  description: `
+Lorem ipsum dolor sit amet, vel eu accusam eligendi.
+Illud appareat quo no, id assum nulla vix, eam ut labore 
+consequat dissentiet. Veniam volumus antiopam ei mea. Nam no 
+moderatius sadipscing, an probo volumus senserit mea. Ut quo option
+concludaturque, malis vivendo eam cu, et ius altera dolores.`,
 };

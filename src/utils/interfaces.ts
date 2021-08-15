@@ -16,3 +16,15 @@ export interface Home {
   options: string[];
   logoPath: string;
 }
+
+export interface Header {
+  plain: string;
+  emphasis: string;
+}
+
+export interface About {
+  header: Header;
+  quote: string;
+  tagline: string;
+  description: string;
+}

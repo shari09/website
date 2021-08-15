@@ -1,5 +1,5 @@
 <template>
-  <div class="font-sans bg-black">
+  <div class="font-sans bg-blue">
     <MainPage />
   </div>
 </template>
