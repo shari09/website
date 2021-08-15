@@ -19,6 +19,7 @@ export const home: Home = {
   name: 'SHARI SUN',
   options: [
     'Full Stack Developer',
+    'University of Waterloo',
     'Systems Design Engineering',
     'Food Lover',
     'Designer',
