@@ -35,15 +35,16 @@ export const about: About = {
   quote: 'Engineering is the process of breaking down complex problems and solve them in the cleanest way possible',
   tagline: 'Design, Create, Test',
   description: `
-I mainly do things related to web dev (no matter if it's frontend or backend), since web apps
-are so prevalent right now. Aside from that, I also do UI/UX design (I designed this site)
-but I haven't read upon any actual design guides. Everything was made with intuition.
-If I ever have time, I'll try to get into cybersecurity because hacking sounds cool.
-There are lots of things I like aside from programming.
-In fact, I don't touch the computer at all outside my dedicated "learning hours".
-I like digital drawing (though I haven't drawn in a while), painting, gaming (if it's non-competitive),
-going out with friends (poor wallet though), photography, and photo/video editing (that's the one skill I wish I have).
-If you ever see me in real life, just know that buying me food will always make me happy :)`,
+    I mainly do things related to web dev (no matter if it's frontend or backend), since web apps
+    are so prevalent right now. Aside from that, I also do UI/UX design (I designed this site)
+    but I haven't read upon any actual design guides. Everything was made with intuition.
+    If I ever have time, I'll try to get into cybersecurity because hacking sounds cool.
+    There are lots of things I like aside from programming.
+    In fact, I don't touch the computer at all outside my dedicated "learning hours".
+    I like digital drawing (though I haven't drawn in a while), painting, gaming (if it's non-competitive),
+    going out with friends (poor wallet though), photography, and photo/video editing (that's the one skill I wish I have).
+    If you ever see me in real life, just know that buying me food will always make me happy :)
+  `,
 };
 
 const skills: Skills = {
@@ -75,7 +76,7 @@ export { skills };
 
 export const experience: Experience = {
   header: {
-    plain: 'What I have done over',
+    plain: 'A few of what I\'ve done over',
     emphasis: 'The Years',
   },
   positions: [
@@ -87,21 +88,26 @@ export const experience: Experience = {
     },
     { 
       company: 'ULHacks',
-      role: 'Head of Outreach',
-      description: 'Added powerful features to the core app that was demoed in various company-wide Tech ConnectsAdded powerful features to the core app that was demoed in various company-wide Tech Connects',
+      role: 'Head of Outreach / General Advisor',
+      description: [
+        `Organized the first iteration of ULHacks, a hackathon without any organization 
+        backing such as schools or companies but we had an astonishing number of 250+ participants.`,
+        'Negotiate with 10+ companies and organizations for sponsorship or partnership.',
+      ],
       duration: 'July - Sep 2021',
     },
     { 
       company: 'Hatch Coding',
       role: 'Coding Instructor',
-      description: 'Added powerful features to the core app that was demoed in various company-wide Tech Connects',
+      description: `Mentored students from 7-18 regarding various programming concepts such as game
+        developing, competitive programming, design patterns, or unit testing`,
       duration: 'July - Sep 2021',
     },
     { 
       company: 'YRHacks',
       role: 'Lead Organizer',
-      description: 'Added powerful features to the core app that was demoed in various company-wide Tech Connects',
-      duration: 'July - Sep 2021',
+      description: 'Organized the first school board (YRDSB) hackathon with 300+ participants',
+      duration: '2020 - 2021',
     },
   ],
 };

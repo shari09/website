@@ -44,7 +44,7 @@ export interface Experience {
   positions: {
     company: string;
     role: string;
-    description: string;
+    description: string | string[];
     duration: string;
   }[];
 }

@@ -19,8 +19,11 @@
           v-else 
           :ref="cards[i]"
         >
-          <p class="">{{ position.description }}</p>
-          <p class="ml-auto pl-6 flex-shrink-0">{{ position.duration }}</p>
+          <p v-if="!Array.isArray(position.description)">{{ position.description }}</p>
+          <p v-else v-for="(description, di) in position.description" :key="`${position+i}-${di}`">
+            {{ description }}
+          </p>
+          <p class="ml-auto pl-6 flex-shrink-0 font-bold">{{ position.duration }}</p>
         </div>  
       </transition>
     </div>
@@ -47,6 +50,7 @@ export default defineComponent({
       console.log(cards[val].value?.clientHeight);
       console.log(cards[oldVal]?.value?.clientHeight);
     });
+
 
     return {
       ...experience,
