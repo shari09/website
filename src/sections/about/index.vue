@@ -1,10 +1,11 @@
 <template>
   <div class="h-[8vh] rounded-t-3xl bg-white w-5/6 mx-auto text-center">
     <a :href="'#'+about" class="inline-block">
-    <img 
-      :src="baseUrl+'./assets/bx_bxs-down-arrow.svg'" 
-      class="m-auto animate-bounce w-8 pt-8 cursor-pointer"
-    /></a>
+      <img 
+        :src="baseUrl+'./assets/bx_bxs-down-arrow.svg'" 
+        class="m-auto animate-bounce w-8 pt-8 cursor-pointer"
+      />
+    </a>
   </div>
   <div class="w-full h-[72px] bg-white" :id="about" />
   <Header :header="header" class="bg-white pt-6" />

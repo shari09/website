@@ -28,7 +28,7 @@
 		"indent": ["error", 2],
 		"comma-dangle": ["error", "always-multiline"],
 		"no-use-before-define": "off",
-		"prefer-template": "warn"
+		"prefer-template": "off"
 	},
 	"settings": {
 		"import/resolver": {

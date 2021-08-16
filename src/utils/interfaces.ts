@@ -28,3 +28,23 @@ export interface About {
   tagline: string;
   description: string;
 }
+
+export interface Logo {
+  name: string;
+  path: string;
+}
+
+export interface Skills {
+  header: Header;
+  logos: Logo[];
+}
+
+export interface Experience {
+  header: Header;
+  positions: {
+    company: string;
+    role: string;
+    description: string;
+    duration: string;
+  }[];
+}

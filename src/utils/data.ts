@@ -1,4 +1,4 @@
-import { Home, NavLinks, SocialMedia, About } from "./interfaces";
+import { Home, NavLinks, SocialMedia, About, Skills, Experience } from "./interfaces";
 
 export const navLinks: NavLinks = {
   home: { anchor: 'home', display: 'HOME' },
@@ -44,4 +44,64 @@ In fact, I don't touch the computer at all outside my dedicated "learning hours"
 I like digital drawing (though I haven't drawn in a while), painting, gaming (if it's non-competitive),
 going out with friends (poor wallet though), photography, and photo/video editing (that's the one skill I wish I have).
 If you ever see me in real life, just know that buying me food will always make me happy :)`,
+};
+
+const skills: Skills = {
+  header: {
+    plain: 'What are my',
+    emphasis: 'Skills',
+  },
+  logos: [
+    { name: 'Bootstrap', path: 'bootstrap' },
+    { name: 'C++', path: 'cpp' },
+    { name: 'CSS 3', path: 'css3' },
+    { name: 'SQL', path: 'db' },
+    { name: 'Django', path: 'django' },
+    { name: 'Firebase', path: 'firebase' },
+    { name: 'Google Cloud', path: 'google-cloud' },
+    { name: 'HTML 5', path: 'html5' },
+    { name: 'Java', path: 'java' },
+    { name: 'Javascript', path: 'js' },
+    { name: 'MongoDB', path: 'mongodb' },
+    { name: 'NodeJS', path: 'nodejs' },
+    { name: 'Python', path: 'python' },
+    { name: 'ReactJS', path: 'reactjs' },
+    { name: 'Typescript', path: 'ts' },
+    { name: 'Vue.js', path: 'vue' },
+  ],
+};
+skills.logos.forEach(({ path }, i) => { skills.logos[i].path = `./assets/skills/${path}.svg` });
+export { skills };
+
+export const experience: Experience = {
+  header: {
+    plain: 'What I have done over',
+    emphasis: 'The Years',
+  },
+  positions: [
+    { 
+      company: 'EQWorks',
+      role: 'Full Stack Developer Intern',
+      description: 'Added powerful features to the core app that was demoed in various company-wide Tech Connects',
+      duration: 'July - Sep 2021',
+    },
+    { 
+      company: 'ULHacks',
+      role: 'Head of Outreach',
+      description: 'Added powerful features to the core app that was demoed in various company-wide Tech ConnectsAdded powerful features to the core app that was demoed in various company-wide Tech Connects',
+      duration: 'July - Sep 2021',
+    },
+    { 
+      company: 'Hatch Coding',
+      role: 'Coding Instructor',
+      description: 'Added powerful features to the core app that was demoed in various company-wide Tech Connects',
+      duration: 'July - Sep 2021',
+    },
+    { 
+      company: 'YRHacks',
+      role: 'Lead Organizer',
+      description: 'Added powerful features to the core app that was demoed in various company-wide Tech Connects',
+      duration: 'July - Sep 2021',
+    },
+  ],
 };

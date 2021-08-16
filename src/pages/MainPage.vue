@@ -2,6 +2,11 @@
   <NavigationBar :current="'home'"/>
   <Home />
   <About />
+  <Skills />
+  <Experience />
+  <!-- <Projects />
+  <Testimonies />
+  <Footer /> -->
   <div class="h-screen">
 
   </div>
@@ -9,10 +14,16 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { Home, About, NavigationBar } from '@/sections';
+import { 
+  Home, About, NavigationBar, Skills, 
+  Experience, 
+} from '@/sections';
 
 export default defineComponent({
   name: 'MainPage',
-  components: { NavigationBar, Home, About },
+  components: { 
+    Home, About, NavigationBar, Skills, 
+    Experience, 
+  },
 });
 </script>
