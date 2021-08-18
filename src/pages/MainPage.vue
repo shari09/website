@@ -4,8 +4,8 @@
   <About />
   <Skills />
   <Experience />
-  <!-- <Projects />
-  <Testimonies />
+  <Projects />
+  <!-- <Testimonies />
   <Footer /> -->
   <div class="h-screen">
 
@@ -16,14 +16,14 @@
 import { defineComponent } from 'vue';
 import { 
   Home, About, NavigationBar, Skills, 
-  Experience, 
+  Experience, Projects,
 } from '@/sections';
 
 export default defineComponent({
   name: 'MainPage',
   components: { 
     Home, About, NavigationBar, Skills, 
-    Experience, 
+    Experience, Projects,
   },
 });
 </script>

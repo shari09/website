@@ -7,6 +7,7 @@ module.exports = {
       './public/**/*.html',
       './src/**/*.vue',
       './src/**/**/*.vue',
+      './safelist.txt',
     ],
   },
   // defaultExtractor: content => content.match(/[\w-:/]+(?<!:)/g) || [],

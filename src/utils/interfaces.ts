@@ -48,3 +48,23 @@ export interface Experience {
     duration: string;
   }[];
 }
+
+export interface PhotoCard {
+  photoPath: string;
+  name: string;
+  description: string;
+  link: string;
+}
+
+export interface WordCard {
+  name: string;
+  description: string[];
+  languages: string[];
+  link: string;
+}
+
+export interface Projects {
+  header: Header;
+  photoCards?: PhotoCard[];
+  wordCards?: WordCard[];
+}

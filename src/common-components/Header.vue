@@ -6,7 +6,7 @@
     >
       {{ header.emphasis }}
     </p>
-    <div class="h-1 bg-purple-dark rounded-3xl" :style="{ width: `${header.emphasis.length+3}em` }"/>
+    <div class="h-1 rounded-3xl" :class="`bg-${color}`" :style="{ width: `${header.emphasis.length+3}em` }"/>
   </div>
 </template>
 

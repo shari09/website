@@ -1,4 +1,4 @@
-import { Home, NavLinks, SocialMedia, About, Skills, Experience } from "./interfaces";
+import { Home, NavLinks, SocialMedia, About, Skills, Experience, Projects } from "./interfaces";
 
 export const navLinks: NavLinks = {
   home: { anchor: 'home', display: 'HOME' },
@@ -22,7 +22,7 @@ export const home: Home = {
     'University of Waterloo',
     'Systems Design Engineering',
     'Food Lover',
-    'Designer',
+    'UI/UX Designer',
   ],
   logoPath: './assets/logo.png',
 };
@@ -81,33 +81,105 @@ export const experience: Experience = {
   },
   positions: [
     { 
-      company: 'EQWorks',
+      company: 'EQWorks [CVE: EQ]',
       role: 'Full Stack Developer Intern',
       description: 'Added powerful features to the core app that was demoed in various company-wide Tech Connects',
       duration: 'July - Sep 2021',
     },
     { 
       company: 'ULHacks',
-      role: 'Head of Outreach / General Advisor',
+      role: 'Head of Outreach | General Advisor',
       description: [
         `Organized the first iteration of ULHacks, a hackathon without any organization 
         backing such as schools or companies but we had an astonishing number of 250+ participants.`,
         'Negotiate with 10+ companies and organizations for sponsorship or partnership.',
       ],
-      duration: 'July - Sep 2021',
+      duration: 'June - Sep 2021',
     },
     { 
       company: 'Hatch Coding',
       role: 'Coding Instructor',
       description: `Mentored students from 7-18 regarding various programming concepts such as game
         developing, competitive programming, design patterns, or unit testing`,
-      duration: 'July - Sep 2021',
+      duration: '2019 - 2021',
     },
     { 
       company: 'YRHacks',
       role: 'Lead Organizer',
       description: 'Organized the first school board (YRDSB) hackathon with 300+ participants',
       duration: '2020 - 2021',
+    },
+  ],
+};
+
+export const projects: Projects = {
+  header: {
+    plain: 'Collection of my recent',
+    emphasis: 'Projects',
+  },
+  photoCards: [
+    {
+      name: 'RHHS Website',
+      description: `A website informing all Richmond Hill High School students of the latest updates
+        and school information such as clubs, events, gallery, etc.`,
+      photoPath: './assets/projects/stuco.png',
+      link: 'https://rhhsstuco.ca',
+    },
+    {
+      name: 'RHHS Website',
+      description: `A website informing all Richmond Hill High School students of the latest updates
+        and school information such as clubs, events, gallery, etc.`,
+      photoPath: './assets/projects/stuco.png',
+      link: 'https://rhhsstuco.ca',
+    },
+  ],
+  wordCards: [
+    {
+      name: 'ShiftBoard',
+      languages: ['Django', 'SQLite', 'React.js', 'Python'],
+      description: [
+        `text. It's a convenient tool for mock-ups. It helps to outline 
+        the visual elements of a document or presentation, eg typography, font, or layout.`,
+        `Lorem ipsum is mostly a part of a Latin text by the classical author and 
+        philosopher Cicero. Its words and letters have`,
+        `been changed by addition or removal, so to deliberately render its content nonsensical; 
+        it's not genuine, correct, or com`,
+        `ted with the actual content still not being ready. Think of a news blog that's 
+        filled with content hourly on`,
+      ],
+      link: 'https://github.com/shift-board',
+    },
+    {
+      name: 'ShiftBoard',
+      languages: ['Django', 'SQLite', 'React.js', 'Python'],
+      description: [
+        `text. It's a convenient tool for mock-ups. It helps to outline 
+        the visual elements of a document or presentation, eg typography, font, or layout.`,
+        `Lorem ipsum is mostly a part of a Latin text by the classical author and 
+        philosopher Cicero. Its words and letters have`,
+        `been changed by addition or removal, so to deliberately render its content nonsensical; 
+        it's not genuine, correct, or com`,
+        `ted with the actual content still not being ready. Think of a news blog that's 
+        filled with content hourly on`,
+        `ted with the actual content still not being ready. Think of a news blog that's 
+        filled with content hourly on`,
+      ],
+      link: 'https://github.com/shift-board',
+    },
+    {
+      name: 'ShiftBoard',
+      languages: ['Django', 'SQLite', 'React.js', 'Python'],
+      description: [
+        `text. It's a convenient tool for mock-ups. It helps to outline 
+        the visual elements of a document or presentation, eg typography, font, or layout.`,
+        `Lorem ipsum is mostly a part of a Latin text by the classical author and 
+        philosopher Cicero. Its words and letters have`,
+        `been changed by addition or removal, so to deliberately render its content nonsensical; 
+        it's not genuine, correct, or com`,
+        `ted with the actual content still not being ready. Think of a news blog that's 
+        filled with content hourly on`,
+      ],
+      link: 'https://github.com/shift-board',
     },
   ],
 };

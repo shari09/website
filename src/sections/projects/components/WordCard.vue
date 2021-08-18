@@ -1,0 +1,49 @@
+<template>
+  <div class="px-3 w-full md:w-1/3 h-[30em]">
+    <div class="bg-white rounded-xl w-full h-full p-10 pb-4 flex flex-col">
+      <div class="font-bold text-3xl text-gray-900">{{ info.name }}</div>
+      <div class="font-thin text-md text-gray-800">
+      {{ languages }}
+      </div>
+      <ul class="list-inside overflow-y-auto list-disc my-4 font-thin text-gray-800">
+        <li v-for="(description, i) in info.description" :key="info.name+i">
+          {{ description }}
+        </li>
+      </ul>
+      <a class="text-gray-700 text-xl text-center border border-gray-700 transition duration-500 ease-in-out
+          py-1 px-10 inline-block rounded-lg mr-auto hover:bg-gray-700 hover:text-white hover:scale-110"
+        :href="info.link"
+      >
+        VIEW
+      </a>
+    </div>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent, PropType } from 'vue';
+import { WordCard } from '@/utils/interfaces';
+
+export default defineComponent({
+  name: 'WordCard',
+  props: {
+    info: {
+      type: Object as PropType<WordCard>,
+      required: true,
+    },
+  },
+  setup(props) {
+    const languages = props.info.languages.reduce((acc, cur, i) => {
+      if (i === 0) {
+        return `${acc} ${cur}`
+      }
+      return `${acc} · ${cur} `;
+    }, '');
+
+    return {
+      baseUrl: process.env.BASE_URL,
+      languages,
+    }
+  },
+});
+</script>
