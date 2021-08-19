@@ -17,7 +17,7 @@
 import { defineComponent } from 'vue';
 import { Header } from '@/common-components';
 
-import { projects } from '@/utils/data';
+import { projectsSection } from '@/utils/data';
 
 import { PhotoCard, WordCard } from './components';
 
@@ -26,7 +26,7 @@ export default defineComponent({
   components: { Header, PhotoCard, WordCard },
   setup() {
     return {
-      ...projects,
+      ...projectsSection,
     }
   },
 });

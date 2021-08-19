@@ -1,4 +1,4 @@
-import { Home, NavLinks, SocialMedia, About, Skills, Experience, Projects } from "./interfaces";
+import { HomeSection, NavLinks, SocialMedia, AboutSection, SkillsSection, ExperienceSection, ProjectsSection, Testimony, TestimoniesSection } from "./interfaces";
 
 export const navLinks: NavLinks = {
   home: { anchor: 'home', display: 'HOME' },
@@ -14,7 +14,7 @@ export const socialMedia: { [key: string]: SocialMedia } = {
   devpost: { logoPath: '', link: '' },
 };
 
-export const home: Home = {
+export const homeSection: HomeSection = {
   tag: 'HELLO! MY NAME IS',
   name: 'SHARI SUN',
   options: [
@@ -24,10 +24,10 @@ export const home: Home = {
     'Food Lover',
     'UI/UX Designer',
   ],
-  logoPath: './assets/logo.png',
+  logoPath: '/assets/logo.png',
 };
 
-export const about: About = {
+export const aboutSection: AboutSection = {
   header: {
     plain: 'What kind of person',
     emphasis: 'Am I',
@@ -47,7 +47,7 @@ export const about: About = {
   `,
 };
 
-const skills: Skills = {
+const skillsSection: SkillsSection = {
   header: {
     plain: 'What are my',
     emphasis: 'Skills',
@@ -71,10 +71,10 @@ const skills: Skills = {
     { name: 'Vue.js', path: 'vue' },
   ],
 };
-skills.logos.forEach(({ path }, i) => { skills.logos[i].path = `./assets/skills/${path}.svg` });
-export { skills };
+skillsSection.logos.forEach(({ path }, i) => { skillsSection.logos[i].path = `/assets/skills/${path}.svg` });
+export { skillsSection };
 
-export const experience: Experience = {
+export const experienceSection: ExperienceSection = {
   header: {
     plain: 'A few of what I\'ve done over',
     emphasis: 'The Years',
@@ -112,7 +112,7 @@ export const experience: Experience = {
   ],
 };
 
-export const projects: Projects = {
+export const projectsSection: ProjectsSection = {
   header: {
     plain: 'Collection of my recent',
     emphasis: 'Projects',
@@ -122,14 +122,14 @@ export const projects: Projects = {
       name: 'RHHS Website',
       description: `A website informing all Richmond Hill High School students of the latest updates
         and school information such as clubs, events, gallery, etc.`,
-      photoPath: './assets/projects/stuco.png',
+      photoPath: '/assets/projects/stuco.png',
       link: 'https://rhhsstuco.ca',
     },
     {
       name: 'RHHS Website',
       description: `A website informing all Richmond Hill High School students of the latest updates
         and school information such as clubs, events, gallery, etc.`,
-      photoPath: './assets/projects/stuco.png',
+      photoPath: '/assets/projects/stuco.png',
       link: 'https://rhhsstuco.ca',
     },
   ],
@@ -183,3 +183,29 @@ export const projects: Projects = {
     },
   ],
 };
+
+export const testimoniesSection: TestimoniesSection = {
+  header: {
+    plain: 'How am I like to',
+    emphasis: 'Others',
+  },
+  testimonies: [
+    {
+      quote: 'is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements ',
+      author: 'EmeraldEntities',
+    },
+    {
+      quote: 'is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements',
+      author: 'EmeraldEntities',
+    },
+    {
+      quote: 'is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements ',
+      author: 'EmeraldEntities',
+    },
+    {
+      quote: 'is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements ',
+      author: 'EmeraldEntities',
+    },
+  ],
+};
+

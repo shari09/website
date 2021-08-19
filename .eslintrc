@@ -28,7 +28,8 @@
 		"indent": ["error", 2],
 		"comma-dangle": ["error", "always-multiline"],
 		"no-use-before-define": "off",
-		"prefer-template": "off"
+		"prefer-template": "off",
+		"@typescript-eslint/ban-ts-comment": "off"
 	},
 	"settings": {
 		"import/resolver": {

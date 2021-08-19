@@ -41,7 +41,6 @@ export default defineComponent({
     }, '');
 
     return {
-      baseUrl: process.env.BASE_URL,
       languages,
     }
   },

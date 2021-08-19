@@ -2,7 +2,7 @@
   <div class="h-[8vh] rounded-t-3xl bg-white w-5/6 mx-auto text-center">
     <a :href="'#'+about" class="inline-block">
       <img 
-        :src="baseUrl+'./assets/bx_bxs-down-arrow.svg'" 
+        src="/assets/bx_bxs-down-arrow.svg" 
         class="m-auto animate-bounce w-8 pt-8 cursor-pointer"
       />
     </a>
@@ -24,7 +24,7 @@
 import { defineComponent } from 'vue';
 
 import { Header } from '@/common-components';
-import { about, navLinks } from '@/utils/data';
+import { aboutSection, navLinks } from '@/utils/data';
 
 export default defineComponent({
   name: 'About',
@@ -33,8 +33,7 @@ export default defineComponent({
 
     return {
       about: navLinks.about.anchor,
-      ...about,
-      baseUrl: process.env.BASE_URL,
+      ...aboutSection,
     }
   },
 });

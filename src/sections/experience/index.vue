@@ -34,14 +34,14 @@
 import { defineComponent, ref, watch, Ref } from 'vue';
 import { Header } from '@/common-components';
 
-import { navLinks, experience } from '@/utils/data';
+import { navLinks, experienceSection } from '@/utils/data';
 
 export default defineComponent({
   name: 'Experience',
   components: { Header },
   setup() {
     const curHover = ref<number>(-1);
-    const cards: Ref<null | Element>[] = experience.positions.map(() => ref(null));
+    const cards: Ref<null | Element>[] = experienceSection.positions.map(() => ref(null));
 
     watch(curHover, (val, oldVal) => {
       if (val === -1) {
@@ -53,7 +53,7 @@ export default defineComponent({
 
 
     return {
-      ...experience,
+      ...experienceSection,
       navLinks,
       curHover,
       cards,

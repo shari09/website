@@ -13,7 +13,7 @@
 import { defineComponent } from 'vue';
 
 import { Header } from '@/common-components';
-import { skills } from '@/utils/data';
+import { skillsSection } from '@/utils/data';
 
 
 export default defineComponent({
@@ -21,7 +21,7 @@ export default defineComponent({
   components: { Header },
   setup() {
     return {
-      ...skills,
+      ...skillsSection,
     }
   },
 });

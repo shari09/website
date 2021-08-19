@@ -10,7 +10,7 @@ export interface SocialMedia {
   link: string;
 }
 
-export interface Home {
+export interface HomeSection {
   tag: string;
   name: string;
   options: string[];
@@ -22,7 +22,7 @@ export interface Header {
   emphasis: string;
 }
 
-export interface About {
+export interface AboutSection {
   header: Header;
   quote: string;
   tagline: string;
@@ -34,12 +34,12 @@ export interface Logo {
   path: string;
 }
 
-export interface Skills {
+export interface SkillsSection {
   header: Header;
   logos: Logo[];
 }
 
-export interface Experience {
+export interface ExperienceSection {
   header: Header;
   positions: {
     company: string;
@@ -63,8 +63,18 @@ export interface WordCard {
   link: string;
 }
 
-export interface Projects {
+export interface ProjectsSection {
   header: Header;
   photoCards?: PhotoCard[];
   wordCards?: WordCard[];
+}
+
+export interface Testimony {
+  quote: string;
+  author: string;
+}
+
+export interface TestimoniesSection {
+  header: Header;
+  testimonies: Testimony[];
 }
