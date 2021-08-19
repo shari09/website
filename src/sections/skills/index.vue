@@ -1,7 +1,7 @@
 <template>
   <div class="h-[72px]"/>
   <Header :header="header"/>
-  <div class="flex flex-wrap flex-row bg-purple w-4/5 mx-auto mt-10 mb-32 p-[5%] rounded-3xl justify-between">
+  <div class="flex flex-wrap flex-row bg-purple w-5/6 mx-auto mt-10 mb-32 p-[5%] rounded-3xl justify-between">
     <div v-for="logo in logos" :key="logo.path" class="m-6 w-18">
       <img :src="logo.path" class="mx-auto"/>
       <div class="text-white text-center">{{ logo.name }}</div>

@@ -2,7 +2,7 @@
   <div class="h-[72px] bg-white" :id="navLinks.work.anchor"/>
   <div class="pt-20 pb-32 bg-white">
     <Header :header="header" :color="'blue-dark'" class="mb-20"/>
-    <div class="bg-blue w-4/5 mx-auto my-2 rounded-xl py-8" 
+    <div class="bg-blue w-5/6 mx-auto my-2 rounded-xl py-8" 
       v-for="(position, i) in positions" 
       :key="position+i"
       @mouseenter="curHover = i" 

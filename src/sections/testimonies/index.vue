@@ -5,8 +5,9 @@
     <img src="/assets/left-arrow.svg" 
       class="ml-auto hover:cursor-pointer"
       @click="scroll(-quoteWidth)"
+      v-if="overflow"
     />
-    <div ref="wrapper" class="w-5/6 mx-auto flex flex-row flex-nowrap overflow-x-auto items-center">
+    <div ref="wrapper" class="w-5/6 mx-auto flex flex-row flex-nowrap overflow-x-auto items-center justify-between">
       <Testimony class="m-10" 
         :testimony="testimony" 
         v-for="(testimony, i) in testimonies" 
@@ -17,6 +18,7 @@
     <img src="/assets/right-arrow.svg" 
       class="mr-auto hover:cursor-pointer"
       @click="scroll(quoteWidth)"
+      v-if="overflow"
     />
   </div>
 </template>
@@ -35,6 +37,7 @@ export default defineComponent({
     const wrapper = ref<Element | null>(null);
     const block = ref(null);
     const quoteWidth = ref<number>(0);
+    const overflow = ref<boolean>(false);
 
     const scroll = (amount: number) => {
       if (!wrapper.value) {
@@ -52,11 +55,14 @@ export default defineComponent({
       }
       const fullWidth = wrapper.value.scrollWidth;
       const visibleWidth = wrapper.value.clientWidth;
-
-      wrapper.value.scrollTo({
-        left: wrapper.value.scrollLeft + (fullWidth-visibleWidth)/2,
-        behavior: 'smooth',
-      });
+      
+      if (fullWidth > visibleWidth) {
+        overflow.value = true;
+        wrapper.value.scrollTo({
+          left: wrapper.value.scrollLeft + (fullWidth-visibleWidth)/2,
+          behavior: 'smooth',
+        });
+      }
     });
 
     watch(block, (value) => {
@@ -73,6 +79,7 @@ export default defineComponent({
       scroll,
       block,
       quoteWidth,
+      overflow,
     }
   },
 });

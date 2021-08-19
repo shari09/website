@@ -7,9 +7,6 @@
   <Projects />
   <Testimonies />
   <Footer />
-  <div class="h-screen">
-
-  </div>
 </template>
 
 <script lang="ts">
