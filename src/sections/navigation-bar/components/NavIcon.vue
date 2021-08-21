@@ -47,9 +47,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style scoped>
-  .fade {
-    @apply transition duration-300 ease-in-out;
-  }
-</style>

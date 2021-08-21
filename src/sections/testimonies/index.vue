@@ -7,7 +7,7 @@
       @click="scroll(-quoteWidth)"
       v-if="overflow"
     />
-    <div ref="wrapper" class="w-5/6 mx-auto flex flex-row flex-nowrap overflow-x-auto items-center justify-between">
+    <div ref="wrapper" class="w-5/6 mx-auto flex flex-row flex-nowrap overflow-x-auto items-center justify-between no-scrollbar">
       <Testimony class="m-10" 
         :testimony="testimony" 
         v-for="(testimony, i) in testimonies" 
@@ -84,3 +84,14 @@ export default defineComponent({
   },
 });
 </script>
+
+<style scoped>
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+</style>

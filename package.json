@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "TAILWIND_MODE=watch vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "predeploy": "yarn build && echo \"www.sharisun.me\" > dist/CNAME",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -34,7 +36,8 @@
     "eslint-plugin-vue": "^7.0.0",
     "postcss": "^7",
     "prettier": "^2.3.1",
-    "typescript": "~4.1.5"
+    "typescript": "~4.1.5",
+    "gh-pages": "^3.2.3"
   },
   "eslintConfig": {
     "root": true,

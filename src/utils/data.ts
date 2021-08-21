@@ -1,4 +1,4 @@
-import { HomeSection, NavLinks, SocialMedia, AboutSection, SkillsSection, ExperienceSection, ProjectsSection, Testimony, TestimoniesSection } from "./interfaces";
+import { HomeSection, NavLinks, SocialMedia, AboutSection, SkillsSection, ExperienceSection, ProjectsSection, TestimoniesSection } from "./interfaces";
 
 export const navLinks: NavLinks = {
   home: { anchor: 'home', display: 'HOME' },
@@ -7,12 +7,12 @@ export const navLinks: NavLinks = {
   testimonies: { anchor: 'testimonies', display: 'TESTIMONIES' },
 };
 
-export const socialMedia: { [key: string]: SocialMedia } = {
-  github: { logoPath: '', link: '' },
-  linkedIn: { logoPath: '', link: '' },
-  email: { logoPath: '', link: '' },
-  devpost: { logoPath: '', link: '' },
-};
+export const socialMedia: SocialMedia[] = [
+  { logoPath: '/assets/social-media/devpost.svg', link: 'https://devpost.com/shari09' },
+  { logoPath: '/assets/social-media/email.svg', link: 'mailto:sun.shari09@gmail.com' },
+  { logoPath: '/assets/social-media/github.svg', link: 'https://github.com/shari09' },
+  { logoPath: '/assets/social-media/linkedin.svg', link: 'https://www.linkedin.com/in/shari-sun-536477182/' },
+];
 
 export const homeSection: HomeSection = {
   tag: 'HELLO! MY NAME IS',

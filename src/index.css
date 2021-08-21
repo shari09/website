@@ -6,3 +6,9 @@
 html {
   scroll-behavior: smooth;
 }
+
+@layer utilities {
+  .fade {
+    @apply transition duration-200 ease-in-out;
+  }
+}

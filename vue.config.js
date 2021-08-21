@@ -14,6 +14,7 @@ module.exports = {
       extensions: ['.vue', '...'],
     },
   },
+  publicPath: '',
   css: {
     loaderOptions: {
       postcss: {
