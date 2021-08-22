@@ -7,7 +7,7 @@
       />
     </a>
   </div>
-  <div class="w-full h-[72px] bg-white" :id="about" />
+  <div class="w-full h-[72px] bg-white" :id="about" ref="root" />
   <Header :header="header" class="bg-white pt-6" />
   <div class="py-28 bg-white flex items-center">
     <div class="text-right flex-1 pr-3">
@@ -21,7 +21,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, ref } from 'vue';
 
 import { Header } from '@/common-components';
 import { aboutSection, navLinks } from '@/utils/data';
@@ -30,10 +30,12 @@ export default defineComponent({
   name: 'About',
   components: { Header },
   setup() {
+    const root = ref(null);
 
     return {
       about: navLinks.about.anchor,
       ...aboutSection,
+      root,
     }
   },
 });

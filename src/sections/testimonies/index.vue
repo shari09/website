@@ -1,5 +1,5 @@
 <template>
-  <div class="h-[72px]" :id="navLinks.testimonies.anchor"/>
+  <div class="h-[72px]" :id="navLinks.testimonies.anchor" ref="root"/>
   <Header :header="header" class="my-10"/>
   <div class="flex flex-row">
     <img src="/assets/left-arrow.svg" 
@@ -38,6 +38,7 @@ export default defineComponent({
     const block = ref(null);
     const quoteWidth = ref<number>(0);
     const overflow = ref<boolean>(false);
+    const root = ref(null);
 
     const scroll = (amount: number) => {
       if (!wrapper.value) {
@@ -80,6 +81,7 @@ export default defineComponent({
       block,
       quoteWidth,
       overflow,
+      root,
     }
   },
 });

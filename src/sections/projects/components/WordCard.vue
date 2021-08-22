@@ -11,7 +11,7 @@
         </li>
       </ul>
       <a class="text-gray-700 text-xl text-center border border-gray-700 transition duration-500 ease-in-out
-          py-1 px-10 inline-block rounded-lg mr-auto hover:bg-gray-700 hover:text-white hover:scale-110"
+          py-1 px-10 inline-block rounded-lg mr-auto hover:bg-gray-700 hover:text-white hover:scale-110 mt-auto"
         :href="info.link"
       >
         VIEW

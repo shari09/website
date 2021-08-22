@@ -1,5 +1,5 @@
 <template>
-  <div class="h-[72px] bg-white" :id="navLinks.work.anchor"/>
+  <div class="h-[72px] bg-white" :id="navLinks.work.anchor" ref="root"/>
   <div class="pt-20 pb-32 bg-white">
     <Header :header="header" :color="'blue-dark'" class="mb-20"/>
     <div class="bg-blue w-5/6 mx-auto my-2 rounded-xl py-8" 
@@ -41,6 +41,7 @@ export default defineComponent({
   components: { Header },
   setup() {
     const curHover = ref<number>(-1);
+    const root = ref(null);
     const cards: Ref<null | Element>[] = experienceSection.positions.map(() => ref(null));
 
     watch(curHover, (val, oldVal) => {
@@ -57,6 +58,7 @@ export default defineComponent({
       navLinks,
       curHover,
       cards,
+      root,
     }
   },
 });

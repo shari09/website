@@ -1,5 +1,5 @@
 <template>
-  <div :id="anchor" class="bg-purple-lightest h-[90vh] flex flex-col md:flex-row items-center justify-center">
+  <div :id="anchor" class="bg-purple-lightest h-[90vh] flex flex-col md:flex-row items-center justify-center" ref="root">
     <div class="w-full md:w-1/4 ml-auto text-purple-darkest">
       <p class="text-lg">{{ tag }}</p>
       <p class="text-5xl font-bold">{{ name }}</p>
@@ -12,7 +12,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, ref } from 'vue';
 import { navLinks, homeSection } from '@/utils/data';
 import { Typing } from './components';
 
@@ -22,10 +22,12 @@ export default defineComponent({
   components: { Typing },
   setup() {
     const { home: { anchor } } = navLinks;
+    const root = ref(null);
 
     return {
       anchor,
       ...homeSection,
+      root,
     }
   },
 });

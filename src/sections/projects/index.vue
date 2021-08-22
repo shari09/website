@@ -10,6 +10,10 @@
         class="mt-3"
       />
     </div>
+    <div class="mx-auto text-2xl text-center mt-14 text-gray-900">
+      And... much more on 
+      <a href="https://github.com/shari09" class="text-purple-dark hover:text-purple-darkest font-bold">GitHub!</a>
+    </div>
   </div>
 </template>
 

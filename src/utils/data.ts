@@ -21,8 +21,8 @@ export const homeSection: HomeSection = {
     'Full Stack Developer',
     'University of Waterloo',
     'Systems Design Engineering',
+    'Looking for Winter 2022 co-op',
     'Food Lover',
-    'UI/UX Designer',
   ],
   logoPath: '/assets/logo.png',
 };
@@ -37,7 +37,8 @@ export const aboutSection: AboutSection = {
   description: `
     I mainly do things related to web dev (no matter if it's frontend or backend), since web apps
     are so prevalent right now. Aside from that, I also do UI/UX design (I designed this site)
-    but I haven't read upon any actual design guides. Everything was made with intuition.
+    but I haven't read upon any actual design guides (I may be violating a lot of design architecture). 
+    Everything was made with intuition.
     If I ever have time, I'll try to get into cybersecurity because hacking sounds cool.
     There are lots of things I like aside from programming.
     In fact, I don't touch the computer at all outside my dedicated "learning hours".
@@ -62,13 +63,13 @@ const skillsSection: SkillsSection = {
     { name: 'Google Cloud', path: 'google-cloud' },
     { name: 'HTML 5', path: 'html5' },
     { name: 'Java', path: 'java' },
-    { name: 'Javascript', path: 'js' },
+    { name: 'JavaScript', path: 'js' },
     { name: 'MongoDB', path: 'mongodb' },
     { name: 'NodeJS', path: 'nodejs' },
     { name: 'Python', path: 'python' },
-    { name: 'ReactJS', path: 'reactjs' },
-    { name: 'Typescript', path: 'ts' },
-    { name: 'Vue.js', path: 'vue' },
+    { name: 'React', path: 'reactjs' },
+    { name: 'TypeScript', path: 'ts' },
+    { name: 'Vue', path: 'vue' },
   ],
 };
 skillsSection.logos.forEach(({ path }, i) => { skillsSection.logos[i].path = `/assets/skills/${path}.svg` });
@@ -83,7 +84,7 @@ export const experienceSection: ExperienceSection = {
     { 
       company: 'EQWorks [CVE: EQ]',
       role: 'Full Stack Developer Intern',
-      description: 'Added powerful features to the core app that was demoed in various company-wide Tech Connects',
+      description: 'Added powerful features to the core app using React and Express that was demoed in various company-wide Tech Connects.',
       duration: 'July - Sep 2021',
     },
     { 
@@ -100,13 +101,13 @@ export const experienceSection: ExperienceSection = {
       company: 'Hatch Coding',
       role: 'Coding Instructor',
       description: `Mentored students from 7-18 regarding various programming concepts such as game
-        developing, competitive programming, design patterns, or unit testing`,
+        developing, competitive programming, design patterns, or unit testing.`,
       duration: '2019 - 2021',
     },
     { 
       company: 'YRHacks',
       role: 'Lead Organizer',
-      description: 'Organized the first school board (YRDSB) hackathon with 300+ participants',
+      description: 'Organized the first school board (YRDSB) hackathon with 300+ participants.',
       duration: '2020 - 2021',
     },
   ],
@@ -126,60 +127,47 @@ export const projectsSection: ProjectsSection = {
       link: 'https://rhhsstuco.ca',
     },
     {
-      name: 'RHHS Website',
-      description: `A website informing all Richmond Hill High School students of the latest updates
-        and school information such as clubs, events, gallery, etc.`,
+      name: 'Duber Judge',
+      description: `An online judge made without using any frameworks/libraries 
+        (with the exception of SQLite Java SDK) where one can practice and sharpen their coding/algorithm 
+        knowledge alongside everyone else in the community. `,
       photoPath: '/assets/projects/stuco.png',
-      link: 'https://rhhsstuco.ca',
+      link: 'https://github.com/beepboop271/duber-judge/tree/ics4ue-submission',
     },
   ],
   wordCards: [
     {
       name: 'ShiftBoard',
-      languages: ['Django', 'SQLite', 'React.js', 'Python'],
+      languages: ['Django', 'SQLite', 'React', 'Python', 'TypeScript'],
       description: [
-        `text. It's a convenient tool for mock-ups. It helps to outline 
-        the visual elements of a document or presentation, eg typography, font, or layout.`,
-        `Lorem ipsum is mostly a part of a Latin text by the classical author and 
-        philosopher Cicero. Its words and letters have`,
-        `been changed by addition or removal, so to deliberately render its content nonsensical; 
-        it's not genuine, correct, or com`,
-        `ted with the actual content still not being ready. Think of a news blog that's 
-        filled with content hourly on`,
+        `Allows a user to create boards for other, anonymous users to put messages and pictures 
+        related to the theme of the board. Anyone can contribute to the board as long 
+        as they have a link so no need for annoying sign-ups.`,
+        `Backend is built around Django (unit tests, routing, database connection).`,
+        `Dedicated to my grandpa who passed away this year.`,
       ],
       link: 'https://github.com/shift-board',
     },
     {
-      name: 'ShiftBoard',
-      languages: ['Django', 'SQLite', 'React.js', 'Python'],
+      name: 'Mongo-Tsapp',
+      languages: ['React Native', 'TypeScript', 'MongoDB', 'Firebase'],
       description: [
-        `text. It's a convenient tool for mock-ups. It helps to outline 
-        the visual elements of a document or presentation, eg typography, font, or layout.`,
-        `Lorem ipsum is mostly a part of a Latin text by the classical author and 
-        philosopher Cicero. Its words and letters have`,
-        `been changed by addition or removal, so to deliberately render its content nonsensical; 
-        it's not genuine, correct, or com`,
-        `ted with the actual content still not being ready. Think of a news blog that's 
-        filled with content hourly on`,
-        `ted with the actual content still not being ready. Think of a news blog that's 
-        filled with content hourly on`,
+        `A user friendly mobile version of teach assist (a tool YRDSB uses for student markings).`,
+        `Used MongoDB atlas for data storage and Stitch (BAAS) for serverless functions (polling on the official site)`,
+        `Firebase is used for push notifications for mark updates.`,
       ],
-      link: 'https://github.com/shift-board',
+      link: 'https://github.com/shari09/mongo-tsapp',
     },
     {
-      name: 'ShiftBoard',
-      languages: ['Django', 'SQLite', 'React.js', 'Python'],
+      name: 'Minute Aid',
+      languages: ['Firebase', 'React', 'Chrome extension', 'Azure'],
       description: [
-        `text. It's a convenient tool for mock-ups. It helps to outline 
-        the visual elements of a document or presentation, eg typography, font, or layout.`,
-        `Lorem ipsum is mostly a part of a Latin text by the classical author and 
-        philosopher Cicero. Its words and letters have`,
-        `been changed by addition or removal, so to deliberately render its content nonsensical; 
-        it's not genuine, correct, or com`,
-        `ted with the actual content still not being ready. Think of a news blog that's 
-        filled with content hourly on`,
+        `The extension allows users to transcribe Google Meets and store the transcript in the web app.`,
+        `Azure Cognitive Services is used for automatically detecting keywords said in the meeting.`,
+        `Web app hosted on Firebase.`,
+        `Made for Hack The North 2020++.`,
       ],
-      link: 'https://github.com/shift-board',
+      link: 'https://devpost.com/software/minute-aid',
     },
   ],
 };
