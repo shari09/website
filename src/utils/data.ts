@@ -32,19 +32,26 @@ export const aboutSection: AboutSection = {
     plain: 'What kind of person',
     emphasis: 'Am I',
   },
-  quote: 'Engineering is the process of breaking down complex problems and solve them in the cleanest way possible',
+  quote: 'Engineering is the process of breaking down complex problems and solving them in the cleanest way possible',
   tagline: 'Design, Create, Test',
   description: `
-    I mainly do things related to web dev (no matter if it's frontend or backend), since web apps
-    are so prevalent right now. Aside from that, I also do UI/UX design (I designed this site)
-    but I haven't read upon any actual design guides (I may be violating a lot of design architecture). 
-    Everything was made with intuition.
-    If I ever have time, I'll try to get into cybersecurity because hacking sounds cool.
-    There are lots of things I like aside from programming.
-    In fact, I don't touch the computer at all outside my dedicated "learning hours".
-    I like digital drawing (though I haven't drawn in a while), painting, gaming (if it's non-competitive),
-    going out with friends (poor wallet though), photography, and photo/video editing (that's the one skill I wish I have).
-    If you ever see me in real life, just know that buying me food will always make me happy :)
+    I mainly do programming in the web development field since web apps are so prevalent right now. 
+    I'm not limited to just frontend developing, but also writing APIs which sometimes include SQL statements or 
+    calling serverless functions in addition to just routing and basic logic. Just as a disclaimer, I'm not just a lowly web-dev,
+    I can also write low level code such as implementing event listeners, working with sockets, or optimizing memory and speed.
+
+    Aside from that, I also do UI/UX design, and a great work sample would be this website that I designed using Figma.
+    Despite knowing the existent of design architectures and colour guides, I never actually read upon any of them since my
+    main focus isn't on designing so whenever I need to design something, it is done with intuition.
+
+    Aside from programming, I'm actually fascinated in the category of arts—literature, visual arts and music. However,
+    I wouldn't call myself good at any form of arts, especially literature and music. One proud moment was when my friend
+    was looking at the site and asked where I got the "Engineering is the process..." quote from, unexpecting that I came up
+    with it myself.
+
+    I have two goals for university—get into cybersecurity and video editing. I don't know how much time, and motivation, I will have
+    once school work starts piling on top of me. Realisticly speaking, I can foresee myself lying on the couch being a potato whenever
+    I have free time or going outside and continue being a food potato... but we will see :)
   `,
 };
 
