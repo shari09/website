@@ -5,8 +5,9 @@
       :class="[!open && 'hidden']"
       @click="open = false"
     />
-    <div class="md:h-full md:flex md:flex-row"
-      :class="[open ? 'flex flex-col absolute bg-white top-0 left-0 z-50 h-full pt-12 w-4/5 pl-6 justify-start' : 'hidden']"
+    <div class=" h-full pl-6 left-0 justify-start w-4/5 flex flex-col absolute bg-white top-0 z-50 pt-12
+      transition-all duration-200 md:pt-0 md:translate-x-0 md:w-auto md:flex md:flex-row md:static"
+      :class="[!open && '-translate-x-full']"
     >
       <NavIcon 
         v-for="navLink in Object.values(navLinks)" 

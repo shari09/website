@@ -3,12 +3,12 @@
   <Header :header="header" class="my-14"/>
   <div class="flex flex-row mb-12">
     <img src="/assets/left-arrow.svg" 
-      class="ml-auto hover:cursor-pointer"
+      class="hidden md:block ml-auto hover:cursor-pointer"
       @click="scroll(-quoteWidth)"
       v-if="overflow"
     />
-    <div ref="wrapper" class="w-5/6 mx-auto flex flex-row flex-nowrap overflow-x-auto items-center justify-between no-scrollbar">
-      <Testimony class="m-10" 
+    <div ref="wrapper" class="mx-2 md:w-5/6 md:mx-auto flex flex-col md:flex-row flex-nowrap md:overflow-x-auto items-center justify-between no-scrollbar">
+      <Testimony class="m-4 md:m-10" 
         :testimony="testimony" 
         v-for="(testimony, i) in testimonies" 
         :key="'testimonies'+i"
@@ -16,7 +16,7 @@
       />
     </div>
     <img src="/assets/right-arrow.svg" 
-      class="mr-auto hover:cursor-pointer"
+      class="hidden md:block mr-auto hover:cursor-pointer"
       @click="scroll(quoteWidth)"
       v-if="overflow"
     />

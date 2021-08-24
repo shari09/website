@@ -9,13 +9,13 @@
   </div>
   <div class="w-full h-[72px] bg-white" :id="about" ref="root" />
   <Header :header="header" class="bg-white pt-6" />
-  <div class="py-28 bg-white items-center hidden md:flex">
-    <div class="text-right flex-1 pr-3">
-      <p class="ml-40 text-purple-darkest text-4xl">{{ quote }}</p>
-      <p class="ml-40 text-magenta text-5xl">{{ tagline }}</p>
+  <div class="py-14 md:py-28 bg-white items-center flex flex-col md:flex-row">
+    <div class="ml-2 md:ml-0 text-center md:text-right flex-1 pr-3">
+      <p class="md:ml-40 text-purple-darkest text-4xl">{{ quote }}</p>
+      <p class="md:ml-40 text-magenta text-5xl">{{ tagline }}</p>
     </div>
-    <div class="flex-1 pl-3">
-      <p class="pr-40 text-lg text-blue-dark">{{ description }}</p>
+    <div class="mt-10 md:mt-0 flex-1 pl-3">
+      <p class="md:pr-40 text-lg text-blue-dark">{{ description }}</p>
     </div>
   </div>
 </template>

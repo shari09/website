@@ -1,7 +1,7 @@
 <template>
   <div class="pt-32">
     <Header :header="header" />
-    <div class="flex flex-row w-5/6 mx-auto mt-20 flex-wrap">
+    <div class="flex flex-row md:w-5/6 mx-auto mt-20 flex-wrap">
       <PhotoCard v-for="(card, i) in photoCards" :key="card.name+i" :info="card"/>
       <WordCard 
         v-for="(card, i) in wordCards" 

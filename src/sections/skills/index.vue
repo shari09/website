@@ -1,11 +1,11 @@
 <template>
   <div class="h-[72px]"/>
   <Header :header="header"/>
-  <div class="hidden md:block flex flex-col bg-purple w-5/6 mx-auto mt-10 mb-32 p-[5%] rounded-3xl ">
-    <div class="justify-between flex flex-nowrap flex-row "
+  <div class="flex flex-col bg-purple mx-2 md:w-5/6 md:mx-auto mt-10 mb-32 p-[5%] rounded-3xl ">
+    <div class="justify-between flex flex-wrap md:flex-nowrap flex-row "
       v-for="(logos, i) in logoGroups" :key="'logogroup'+i"
     >
-      <div v-for="logo in logos" :key="logo.path" class="m-6 w-18 flex-shrink-0">
+      <div v-for="logo in logos" :key="logo.path" class="m-6 w-16 w-18 md:flex-shrink-0">
         <img :src="logo.path" class="mx-auto h-auto"/>
         <div class="text-white text-center">{{ logo.name }}</div>
       </div>

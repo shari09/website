@@ -1,11 +1,11 @@
 <template>
-  <div class="px-2 w-full md:w-1/3 h-[30em]">
+  <div class="px-2 w-full md:w-1/3 h-full md:h-[30em]">
     <div class="bg-white rounded-xl w-full h-full p-10 pb-6 flex flex-col">
       <div class="text-3xl text-gray-900">{{ info.name }}</div>
       <div class="font-thin text-sm text-gray-800">
       {{ languages }}
       </div>
-      <ul class="list-inside overflow-y-auto list-disc my-6 font-thin text-gray-800">
+      <ul class="list-inside overflow-y-auto list-disc mt-6 mb-10 font-thin text-gray-800">
         <li v-for="(description, i) in info.description" :key="info.name+i">
           {{ description }}
         </li>
