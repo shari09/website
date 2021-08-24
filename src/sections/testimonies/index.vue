@@ -4,10 +4,14 @@
   <div class="flex flex-row mb-12">
     <img src="/assets/left-arrow.svg" 
       class="hidden md:block ml-auto hover:cursor-pointer"
+      :class="[prop.left === 0 && 'grayscale opacity-40 hover:cursor-default']"
       @click="scroll(-quoteWidth)"
       v-if="overflow"
     />
-    <div ref="wrapper" class="mx-2 md:w-5/6 md:mx-auto flex flex-col md:flex-row flex-nowrap md:overflow-x-auto items-center justify-between no-scrollbar">
+    <div ref="wrapper" 
+      class="mx-2 md:w-5/6 md:mx-auto flex flex-col md:flex-row flex-nowrap md:overflow-x-auto items-center justify-between no-scrollbar"
+      @scroll="() => prop.left = wrapper.scrollLeft"
+    >
       <Testimony class="m-4 md:m-10" 
         :testimony="testimony" 
         v-for="(testimony, i) in testimonies" 
@@ -17,6 +21,7 @@
     </div>
     <img src="/assets/right-arrow.svg" 
       class="hidden md:block mr-auto hover:cursor-pointer"
+      :class="[prop.left+prop.visibleWidth === prop.fullWidth && 'grayscale opacity-40 hover:cursor-default']"
       @click="scroll(quoteWidth)"
       v-if="overflow"
     />
@@ -39,6 +44,11 @@ export default defineComponent({
     const quoteWidth = ref<number>(0);
     const overflow = ref<boolean>(false);
     const root = ref(null);
+    const prop = ref({
+      left: 0,
+      visibleWidth: 0,
+      fullWidth: 0,
+    });
 
     const scroll = (amount: number) => {
       if (!wrapper.value) {
@@ -57,6 +67,8 @@ export default defineComponent({
         }
         const fullWidth = wrapper.value.scrollWidth;
         const visibleWidth = wrapper.value.clientWidth;
+        prop.value.fullWidth = fullWidth;
+        prop.value.visibleWidth = visibleWidth;
         
         if (fullWidth > visibleWidth && !overflow.value) {
           overflow.value = true;
@@ -89,6 +101,7 @@ export default defineComponent({
       quoteWidth,
       overflow,
       root,
+      prop,
     }
   },
 });
