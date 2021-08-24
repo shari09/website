@@ -144,7 +144,7 @@ export const projectsSection: ProjectsSection = {
         related to the theme of the board. Anyone can contribute to the board as long 
         as they have a link so no need for annoying sign-ups.`,
         `Backend is built around Django (unit tests, routing, database connection).`,
-        `Dedicated to my grandpa who passed away this year.`,
+        `Dedicated to an important person who passed away this year.`,
       ],
       link: 'https://github.com/shift-board',
     },
@@ -179,11 +179,11 @@ export const testimoniesSection: TestimoniesSection = {
   },
   testimonies: [
     {
-      quote: 'is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements ',
-      author: 'EmeraldEntities',
+      quote: 'OUTREACH MOMMMMMMMMMM!!!',
+      author: 'Xiao',
     },
     {
-      quote: 'is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements',
+      quote: 'She plays Bloons TD with me and that is cool',
       author: 'EmeraldEntities',
     },
     {

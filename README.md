@@ -1,24 +1,9 @@
-# website
+# Personal Website v2
 
-## Project setup
-```
-yarn install
-```
+As co-op hunting season is coming close, I finally found the urge to remake my personal website (don't worry about v1) so it'll be an actual presentable website.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+> "Was this forked?"
 
-### Compiles and minifies for production
-```
-yarn build
-```
+Nope, but I'll take that as a compliment :))
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+I designed and coded everything by my own without copying any designs/templates 😄
