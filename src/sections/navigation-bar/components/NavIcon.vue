@@ -4,12 +4,12 @@
     @mouseleave="setActive(false)"
   >
     <span 
-      class="mt-auto text-lg fade" 
-      :class="[isActive() ? 'text-purple' : 'text-purple-light']"
+      class="mt-auto text-lg fade text-purple opacity-90" 
+      :class="[isActive() && 'md:text-purple-darkest']"
     >{{ text }}</span>
     <div class="mb-auto">
       <div 
-        class="h-1 bg-purple-dark rounded-3xl mb-auto fade"
+        class="hidden md:block h-1 bg-purple-dark rounded-3xl mb-auto fade"
         :class="[ !isActive() && 'bg-opacity-0']"
       />
     </div>

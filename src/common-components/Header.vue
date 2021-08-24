@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full pl-28">
+  <div class="w-full pl-4 md:pl-28">
     <p class="text-3xl">{{ header.plain }}</p>
     <p class="text-4xl font-bold"
       :class="`text-${color}`"

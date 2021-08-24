@@ -34,7 +34,7 @@ export default defineComponent({
         // @ts-ignore
         const { section: curSection } = Object.entries(sections.value).reduce((prev, [section, { root }]) => {
           const y = root.getBoundingClientRect().top;
-          return y <= 2 && y >= prev.value ? { section, value: y } : prev
+          return y <= 2 && y >= prev.value ? { section, value: y } : prev;
         }, { section: 'home', value: -10000 });
         current.value = curSection;
       });

@@ -1,5 +1,5 @@
 <template>
-  <div class="py-32">
+  <div class="pt-32">
     <Header :header="header" />
     <div class="flex flex-row w-5/6 mx-auto mt-20 flex-wrap">
       <PhotoCard v-for="(card, i) in photoCards" :key="card.name+i" :info="card"/>

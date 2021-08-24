@@ -29,7 +29,8 @@
 		"comma-dangle": ["error", "always-multiline"],
 		"no-use-before-define": "off",
 		"prefer-template": "off",
-		"@typescript-eslint/ban-ts-comment": "off"
+		"@typescript-eslint/ban-ts-comment": "off",
+		"no-plusplus": "off"
 	},
 	"settings": {
 		"import/resolver": {

@@ -77,8 +77,8 @@ export { skillsSection };
 
 export const experienceSection: ExperienceSection = {
   header: {
-    plain: 'A few of what I\'ve done over',
-    emphasis: 'The Years',
+    plain: 'Some positions I\'ve held',
+    emphasis: 'Recently',
   },
   positions: [
     { 
@@ -100,8 +100,8 @@ export const experienceSection: ExperienceSection = {
     { 
       company: 'Hatch Coding',
       role: 'Coding Instructor',
-      description: `Mentored students from 7-18 regarding various programming concepts such as game
-        developing, competitive programming, design patterns, or unit testing.`,
+      description: `Developed curriculum for students from 7-18 regarding various programming concepts such as game
+        developing, competitive programming, design patterns, or unit testing and personally mentored them.`,
       duration: '2019 - 2021',
     },
     { 
@@ -131,8 +131,8 @@ export const projectsSection: ProjectsSection = {
       description: `An online judge made without using any frameworks/libraries 
         (with the exception of SQLite Java SDK) where one can practice and sharpen their coding/algorithm 
         knowledge alongside everyone else in the community. `,
-      photoPath: '/assets/projects/stuco.png',
-      link: 'https://github.com/beepboop271/duber-judge/tree/ics4ue-submission',
+      photoPath: '/assets/projects/dubj.png',
+      link: 'https://github.com/beepboop271/duber-judge',
     },
   ],
   wordCards: [
@@ -187,12 +187,12 @@ export const testimoniesSection: TestimoniesSection = {
       author: 'EmeraldEntities',
     },
     {
-      quote: 'is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements ',
-      author: 'EmeraldEntities',
+      quote: 'Shari is a charismatic senpai with wonderful leadership skills that also doubles as an arson target',
+      author: 'Vivian (watch out)',
     },
     {
-      quote: 'is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements ',
-      author: 'EmeraldEntities',
+      quote: 'Shari has an excellent eye for design and front end programming',
+      author: 'Kenzo',
     },
   ],
 };

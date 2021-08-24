@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black h-64 mt-32 bg-opacity-[85%]">
+  <div class="bg-black h-72 mt-32 bg-opacity-[85%]">
     <div class="w-5/6 mx-auto h-full text-gray-300 flex flex-row items-center">
     <div class="mr-auto">
       <a v-for="icon in socialMedia" 

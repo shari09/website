@@ -9,7 +9,7 @@
   </div>
   <div class="w-full h-[72px] bg-white" :id="about" ref="root" />
   <Header :header="header" class="bg-white pt-6" />
-  <div class="py-28 bg-white flex items-center">
+  <div class="py-28 bg-white items-center hidden md:flex">
     <div class="text-right flex-1 pr-3">
       <p class="ml-40 text-purple-darkest text-4xl">{{ quote }}</p>
       <p class="ml-40 text-magenta text-5xl">{{ tagline }}</p>

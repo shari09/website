@@ -20,7 +20,7 @@
           :ref="cards[i]"
         >
           <p v-if="!Array.isArray(position.description)">{{ position.description }}</p>
-          <p v-else v-for="(description, di) in position.description" :key="`${position+i}-${di}`">
+          <p v-else v-for="(description, di) in position.description" :key="`${position+i}-${di}`" class="mx-2">
             {{ description }}
           </p>
           <p class="ml-auto pl-6 flex-shrink-0 font-bold">{{ position.duration }}</p>

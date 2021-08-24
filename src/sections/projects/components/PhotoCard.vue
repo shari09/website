@@ -1,5 +1,5 @@
 <template>
-  <div class="px-2 relative w-full md:w-1/2 h-[26em]" @mouseenter="hover = true" @mouseleave="hover = false">
+  <div class="px-2 relative w-full md:w-1/2 h-[30em]" @mouseenter="hover = true" @mouseleave="hover = false">
     <img :src="info.photoPath" class="object-cover rounded-xl w-full h-full" />
     <transition name="fade" mode="out-in">
       <div class="absolute inset-0 w-full h-full px-2" v-if="hover">

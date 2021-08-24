@@ -1,7 +1,7 @@
 <template>
-  <div class="h-[72px]" :id="navLinks.testimonies.anchor" ref="root"/>
-  <Header :header="header" class="my-10"/>
-  <div class="flex flex-row">
+  <div class="h-[72px] pt-32" :id="navLinks.testimonies.anchor" ref="root"/>
+  <Header :header="header" class="my-14"/>
+  <div class="flex flex-row mb-12">
     <img src="/assets/left-arrow.svg" 
       class="ml-auto hover:cursor-pointer"
       @click="scroll(-quoteWidth)"
@@ -51,19 +51,26 @@ export default defineComponent({
     };
 
     onMounted(() => {
-      if (!wrapper.value) {
-        return;
+      const watchWidth = () => {
+        if (wrapper.value === null) {
+          return;
+        }
+        const fullWidth = wrapper.value.scrollWidth;
+        const visibleWidth = wrapper.value.clientWidth;
+        
+        if (fullWidth > visibleWidth && !overflow.value) {
+          overflow.value = true;
+          wrapper.value.scrollTo({
+            left: wrapper.value.scrollLeft + (fullWidth-visibleWidth)/2,
+            behavior: 'smooth',
+          });
+        }
+        if (fullWidth <= visibleWidth && overflow.value) {
+          overflow.value = false;
+        }
       }
-      const fullWidth = wrapper.value.scrollWidth;
-      const visibleWidth = wrapper.value.clientWidth;
-      
-      if (fullWidth > visibleWidth) {
-        overflow.value = true;
-        wrapper.value.scrollTo({
-          left: wrapper.value.scrollLeft + (fullWidth-visibleWidth)/2,
-          behavior: 'smooth',
-        });
-      }
+      watchWidth();
+      window.addEventListener('resize', watchWidth);
     });
 
     watch(block, (value) => {

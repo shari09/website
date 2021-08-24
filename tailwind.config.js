@@ -32,9 +32,6 @@ module.exports = {
         },
         gray: colors.coolGray,
       },
-      fontFamily: {
-        sans: ['Open Sans', 'Avenir', 'Helvetica', 'Arial', 'sans-serif'],
-      },
     },
   },
   variants: {
