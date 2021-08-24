@@ -35,23 +35,15 @@ export const aboutSection: AboutSection = {
   quote: 'Engineering is the process of breaking down complex problems and solving them in the cleanest way possible',
   tagline: 'Design, Create, Test',
   description: `
-    I mainly do programming in the web development field since web apps are so prevalent right now. 
-    I'm not limited to just frontend developing, but also writing APIs which sometimes include SQL statements or 
-    calling serverless functions in addition to just routing and basic logic. Just as a disclaimer, I'm not just a lowly web-dev,
-    I can also write low level code such as implementing event listeners, working with sockets, or optimizing memory and speed.
-
-    Aside from that, I also do UI/UX design, and a great work sample would be this website that I designed using Figma.
-    Despite knowing the existent of design architectures and colour guides, I never actually read upon any of them since my
-    main focus isn't on designing so whenever I need to design something, it is done with intuition.
-
-    Aside from programming, I'm actually fascinated in the category of arts—literature, visual arts and music. However,
-    I wouldn't call myself good at any form of arts, especially literature and music. One proud moment was when my friend
-    was looking at the site and asked where I got the "Engineering is the process..." quote from, unexpecting that I came up
-    with it myself.
-
-    I have two goals for university—get into cybersecurity and video editing. I don't know how much time, and motivation, I will have
-    once school work starts piling on top of me. Realisticly speaking, I can foresee myself lying on the couch being a potato whenever
-    I have free time or going outside and continue being a food potato... but we will see :)
+    I mainly do programming in the web development field which includes both frontend programming and writing APIs. 
+    Just as a disclaimer, I'm not just a lowly web-dev, I can also write low level code such as 
+    implementing event listeners, thread pools, working with sockets, or optimizing memory and speed.
+    
+    Aside from programming, I'm actually fascinated in the category of arts—literature, visual arts and music, but I'm not an expert in either fields.
+    However, during the creation of this website, I have two very proud moments. 
+    One being when a friend asked me if I stole the design and forked a repo
+    and another when someone asked where I got the "Engineering is the process..." quote from, and I surprised them by saying that I designed
+    and came up with everything myself including the quote.
   `,
 };
 
@@ -191,7 +183,11 @@ export const testimoniesSection: TestimoniesSection = {
     },
     {
       quote: 'She plays Bloons TD with me and that is cool',
-      author: 'EmeraldEntities',
+      author: 'Josift',
+    },
+    {
+      quote: 'Shari is an amazing friend and leader and would be an asset to any team.',
+      author: 'Jerry',
     },
     {
       quote: 'Shari is a charismatic senpai with wonderful leadership skills that also doubles as an arson target',
