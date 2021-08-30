@@ -186,16 +186,20 @@ export const testimoniesSection: TestimoniesSection = {
       author: 'Josift',
     },
     {
-      quote: 'Shari is an amazing friend and leader and would be an asset to any team.',
-      author: 'Jerry',
-    },
-    {
       quote: 'Shari is a charismatic senpai with wonderful leadership skills that also doubles as an arson target',
       author: 'Vivian (watch out)',
     },
     {
+      quote: 'Shari is a very nice person who is very good at making people around her feel comfortable',
+      author: 'Alice',
+    },
+    {
       quote: 'Shari has an excellent eye for design and front end programming',
       author: 'Kenzo',
+    },
+    {
+      quote: 'Shari is an amazing friend and leader and would be an asset to any team.',
+      author: 'Jerry',
     },
   ],
 };
