@@ -12,6 +12,7 @@ export const socialMedia: SocialMedia[] = [
   { logoPath: '/assets/social-media/email.svg', link: 'mailto:sun.shari09@gmail.com' },
   { logoPath: '/assets/social-media/github.svg', link: 'https://github.com/shari09' },
   { logoPath: '/assets/social-media/linkedin.svg', link: 'https://www.linkedin.com/in/shari-sun-536477182/' },
+  { logoPath: '/assets/social-media/medium.svg', link: 'https://medium.com/@shari09' },
 ];
 
 export const homeSection: HomeSection = {
@@ -21,7 +22,7 @@ export const homeSection: HomeSection = {
     'Full Stack Developer',
     'University of Waterloo',
     'Systems Design Engineering',
-    'Looking for Winter 2022 co-op',
+    'Looking for Fall 2022 co-op',
     'Food Lover',
   ],
   logoPath: '/assets/logo.png',
@@ -80,6 +81,12 @@ export const experienceSection: ExperienceSection = {
     emphasis: 'Recently',
   },
   positions: [
+    { 
+      company: 'Coinsquare',
+      role: 'Full Stack Developer Intern',
+      description: 'Restored wire transfer functionality to the Coinsquare platform.',
+      duration: 'Jan - Apr 2022',
+    },
     { 
       company: 'EQWorks [CVE: EQ]',
       role: 'Full Stack Developer Intern',
