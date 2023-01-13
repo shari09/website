@@ -11,7 +11,7 @@ export const socialMedia: SocialMedia[] = [
   { logoPath: '/assets/social-media/devpost.svg', link: 'https://devpost.com/shari09' },
   { logoPath: '/assets/social-media/email.svg', link: 'mailto:sun.shari09@gmail.com' },
   { logoPath: '/assets/social-media/github.svg', link: 'https://github.com/shari09' },
-  { logoPath: '/assets/social-media/linkedin.svg', link: 'https://www.linkedin.com/in/shari-sun-536477182/' },
+  { logoPath: '/assets/social-media/linkedin.svg', link: 'https://www.linkedin.com/in/shari-sun/' },
   { logoPath: '/assets/social-media/medium.svg', link: 'https://medium.com/@shari09' },
 ];
 
@@ -21,8 +21,9 @@ export const homeSection: HomeSection = {
   options: [
     'Full Stack Developer',
     'University of Waterloo',
-    'Systems Design Engineering',
-    'Looking for Fall 2022 co-op',
+    'Software Engineer',
+    'Computer Science',
+    'Looking for Summer 2023 co-op',
     'Food Lover',
   ],
   logoPath: '/assets/logo.png',
@@ -81,6 +82,18 @@ export const experienceSection: ExperienceSection = {
     emphasis: 'Recently',
   },
   positions: [
+    { 
+      company: 'Coinbase',
+      role: 'Software Engineer Intern',
+      description: 'Resolved non-deterministic shard keys for 85 million database records.',
+      duration: 'Sep - Dec 2022',
+    },
+    { 
+      company: 'WhaleCard',
+      role: 'Software Engineer Intern (Part Time)',
+      description: 'Initiated the microservice for the main product.',
+      duration: 'Feb - Jul 2022',
+    },
     { 
       company: 'Coinsquare',
       role: 'Full Stack Developer Intern',
