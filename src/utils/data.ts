@@ -83,6 +83,12 @@ export const experienceSection: ExperienceSection = {
   },
   positions: [
     { 
+      company: 'ETHGlobal',
+      role: 'Software Engineer Intern',
+      description: 'Worked as part of the team to work on projects such as OTP sign-in, automated Discord pings, image templating service, guide analytics, etc.',
+      duration: 'May - Aug 2023',
+    },
+    { 
       company: 'Coinbase',
       role: 'Software Engineer Intern',
       description: 'Resolved non-deterministic shard keys for 85 million database records.',
